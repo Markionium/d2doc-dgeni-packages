@@ -1,14 +1,14 @@
 {
-  "name": "dgeni-packages",
-  "version": "0.9.3",
-  "description": "A collection of dgeni packages for generating documentation from source code",
+  "name": "d2doc-dgeni-packages",
+  "version": "0.0.1",
+  "description": "D2 package based on the ngdoc package for use with D2 library for DHIS2",
   "scripts": {
     "test": "node ./node_modules/jasmine-node/bin/jasmine-node */spec",
     "cover": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node -- */spec"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular/dgeni-packages.git"
+    "url": "https://github.com/Markionium/d2doc-dgeni-packages"
   },
   "keywords": [
     "ngdoc",
@@ -19,7 +19,7 @@
     "javascript",
     "jsdoc"
   ],
-  "author": "Pete Bacon Darwin",
+  "author": "Mark Polak",
   "licenses": [
     {
       "type": "Apache",
@@ -27,7 +27,7 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/angular/dgeni-packages/issues"
+    "url": "https://github.com/Markionium/d2doc-dgeni-packages/issues"
   },
   "dependencies": {
     "dgeni": "~0.3.0",
@@ -61,6 +61,7 @@
     "Pascal Precht <pascal.precht@googlemail.com>",
     "Konstantinos Rousis <rousisk@gmail.com>",
     "Stéphane Reynaud <forresst@voila.fr>",
-    "Matthew Harris <ftmomatt@gmail.com>"
+    "Matthew Harris <ftmomatt@gmail.com>",
+    "Mark Polak <mark@thedutchies.com>"
   ]
 }

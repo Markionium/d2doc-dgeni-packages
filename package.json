@@ -1,6 +1,6 @@
 {
   "name": "d2doc-dgeni-packages",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "D2 package based on the ngdoc package for use with D2 library for DHIS2",
   "scripts": {
     "test": "node ./node_modules/jasmine-node/bin/jasmine-node */spec",

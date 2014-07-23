@@ -30,6 +30,7 @@ module.exports = function(config) {
 
   config.append('processing.processors', [
     require('./processors/d2module'),
+    require('./processors/git-path'),
     require('./processors/partial-names'),
     require('./processors/filter-ngdocs'),
     require('./processors/compute-id'),

@@ -45,7 +45,7 @@ module.exports = {
           if ( match ) {
             var packageName = match[1].toLowerCase();
             if ( packageName ) { packageName = '-' + packageName; }
-            doc.packageName = 'angular' + packageName;
+            doc.packageName = 'd2' + packageName;
             doc.packageFile = doc.packageName + '.js';
           }
 

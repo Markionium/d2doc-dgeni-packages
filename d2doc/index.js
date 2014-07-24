@@ -18,7 +18,8 @@ module.exports = function(config) {
 
   config.append('processing.tagDefinitions', require('./tag-defs'));
   config.append('processing.inlineTagDefinitions', [
-    require('./inline-tag-defs/link')
+    require('./inline-tag-defs/link'),
+    require('./inline-tag-defs/note')
   ]);
 
   // Replace the default compute-path processor
@@ -30,7 +31,7 @@ module.exports = function(config) {
 
   config.append('processing.processors', [
     require('./processors/d2module'),
-    require('./processors/git-path'),
+    require('./processors/git-settings'),
     require('./processors/partial-names'),
     require('./processors/filter-ngdocs'),
     require('./processors/compute-id'),

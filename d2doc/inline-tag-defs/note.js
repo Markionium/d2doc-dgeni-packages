@@ -1,4 +1,4 @@
-var INLINE_NOTE = /(.+?)\n(.+)?/;
+var INLINE_NOTE = /(\w+) (.+?)\n((.\n?)+)/;
 
 module.exports = {
     name: 'note',
@@ -8,9 +8,9 @@ module.exports = {
         return function handleLinkTags(doc, tagName, tagDescription) {
 
             // Parse out the uri and title
-            return tagDescription.replace(INLINE_NOTE, function(match, title, text) {
+            return tagDescription.replace(INLINE_NOTE, function(match, level, title, text) {
 
-                return '<div><h4>' + title + '</h4><p>' + text + '</p></div>';
+                return '<div class="bs-callout bs-callout-' + level + '"><h4>' + title + '</h4><p>' + text + '</p></div>';
             });
         };
     }

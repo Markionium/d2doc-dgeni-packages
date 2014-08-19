@@ -1,5 +1,7 @@
 # Dgeni Packages
 
+[![NPM version](https://badge.fury.io/js/d2doc-dgeni-packages.svg)](http://badge.fury.io/js/d2doc-dgeni-packages)
+
 This repository contains a collection of dgeni packages that can be used by the dgeni documentation
 generator to create documentation from source code.
 
